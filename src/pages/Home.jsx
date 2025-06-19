@@ -1,9 +1,11 @@
 import heroImage from "../assets/images/hero-img01.png";
 import heroImage2 from "../assets/images/hero-img02.png";
 import heroImage3 from "../assets/images/hero-img03.png";
+import icon01 from "../assets/images/icon01.png";
 const Home = () => {
   return (
     <>
+      {/* Hero Section */}
       <section className="hero_section pt-[60px] 2xl:h-[800px]">
         <div className="container">
           <div className="flex flex-col lg:flex-row gap-[90px] items-center justify-between">
@@ -56,6 +58,29 @@ const Home = () => {
                   alt="heroImage2"
                 />
                 <img className="w-full" src={heroImage3} alt="heroImage3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service section */}
+      <section>
+        <div className="container">
+          <div className="lg:w-[470px] mx-auto">
+            <h2 className="heading text-center">
+              Providing the best medical services
+            </h2>
+            <p className="text_para text-center">
+              World class care for everyone. Our health system offers unmatched,
+              expert health services to our patients.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
+            <div className="py-[30px] px-5">
+              <div className="flex items-center justify-center">
+                <img src={icon01} alt="icon-1" />
               </div>
             </div>
           </div>
